@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.container{
+    margin-top: 25px;
+    display: block;
+    width: 960px;
+}
+.criteria-list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+input {
+    width: 50px;
+    height: 50px;
+}
+.amount-criteria-box {
+    display: block;
+    float: right;
+    margin-right: auto;
+    margin-left: 0;
+    border: 1px solid black;
+}
+.form {
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    padding-bottom: 15px;
+}
+
+.form__title {
+    margin: 15px;
+}
+.input-amount{
+    border: 3px solid black ;
+    width: 100px;
+}
+
+.input-amount {
+    border: 3px solid black
+} 
+
+.box-amount {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 25px;
+}
