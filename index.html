@@ -9,170 +9,415 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 
+
 </head>
 
 <body>
     <main>
-   
-<!-- Form -->
-<div class="container">
+
+        <!-- Form -->
+        <div class="container">
             <form class="form1 form">
-                <h3 class="form__title">Критерій №1</h3>
-            <label class="label register-form__label">
-                Показник 1.
-                <input class="input" name="name" type="number" min="0" max="4" value="" id="ind1">
-            </label>
-
-            <label class="label register-form__label">
-                Показник 2.
-                <input class="input" type="number" name="name" min="0" max="4" value="" id="ind2"/>
-            </label>
-
-            <label class="label register-form__label">
-                Показник 3.
-                <input name="name" type="number" class="input" min="0" max="4" value="" id="ind3"/>
-            </label>
-            <label class="label register-form__label">
-                Показник 4.
-                <input name="name" type="number" class="input" min="0" max="4" value="" id="ind4"/>
-            </label>
-            <label class="label register-form__label">
-                Показник 5.
-                <input name="name" type="number" class="input" min="0" max="4" value="" id="ind5"/>
-            </label>
-
-            <button class="button" type="submit">Сума за Критерій 1</button>
-            <input type="text" readonly class="criteria_amount1 input-amount">
+                <h2 class="form__title">ПК №1</h2>
+                <div class="active_criteria">
+                    <h3 class="title_criteria">1Д</h3>
+                    <label class="label register-form__label"> 1Д1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind1">
+                    </label>
+                    <label class="label register-form__label">1Д2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind2">
+                    </label>
+                    <label class="label register-form__label">1Д3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind3">
+                    </label>
+                    <button class="button btn-active" type="submit">Бал за 1Д</button>
+                    <input type="text" readonly class="criteria_amount1 input-amount">
+                </div>
             </form>
 
-
             <form class="form2 form">
-                <h3 class="form__title">Критерій №2</h3>
-            <label class="label register-form__label">
-                Показник 1.
-                <input class="input" name="name" type="number" min="0" max="4" value="" id="ind6">
-            </label>
+                    <div class="congnitive_criteria">
+                    <h3 class="title_criteria">1К</h3>
+                    <label class="label register-form__label"> 1К1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind4">
+                    </label>
+                    <label class="label register-form__label">1К2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind5">
+                    </label>
+                    <label class="label register-form__label">1К3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind6">
+                    </label>
+                    <label class="label register-form__label">1К4
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind7">
+                    </label>
+                    <button class="button another-btn" type="submit">Бал за 1К</button>
+                    <input type="text" readonly class="criteria_amount2 input-amount">
+                </div>
 
-            <label class="label register-form__label">
-                Показник 2.
-                <input class="input" type="number" name="name" min="0" max="4" value="" id="ind7"/>
-            </label>
-
-            <label class="label register-form__label">
-                Показник 3.
-                <input name="name" type="number" class="input" min="0" max="4" value="" id="ind8"/>
-            </label>
-            <label class="label register-form__label">
-                Показник 4.
-                <input name="name" type="number" class="input" min="0" max="4" value="" id="ind9"/>
-            </label>
-            <label class="label register-form__label">
-                Показник 5.
-                <input name="name" type="number" class="input" min="0" max="4" value="" id="ind10"/>
-            </label>
-
-            <button class="button" type="submit">Сума за Критерій 2</button>
-            <input type="text" readonly class="criteria_amount2 input-amount">
             </form>
 
             <form class="form3 form">
-                <h3 class="form__title">Критерій №3</h3>
-            <label class="label register-form__label">
-                Показник 1.
-                <input class="input" name="name" type="number" min="0" max="4" value="" id="ind11">
-            </label>
-
-            <label class="label register-form__label">
-                Показник 2.
-                <input class="input" type="number" name="name" min="0" max="4"  value="" id="ind12"/>
-            </label>
-
-            <label class="label register-form__label">
-                Показник 3.
-                <input name="name" type="number" class="input" min="0" max="4"  value="" id="ind13"/>
-            </label>
-            <label class="label register-form__label">
-                Показник 4.
-                <input name="name" type="number" class="input" min="0" max="4" value="" id="ind14"/>
-            </label>
-            <label class="label register-form__label">
-                Показник 5.
-                <input name="name" type="number" class="input" min="0" max="4" value="" id="ind15"/>
-            </label>
-
-            <button class="button" type="submit">Сума за Критерій 3</button>
-            <input type="text" readonly class="criteria_amount3 input-amount">
+                <h2 class="form__title">ПК №2</h2>
+                <div class="active_criteria">
+                    <h3 class="title_criteria">2Д</h3>
+                    <label class="label register-form__label">2Д1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind8">
+                    </label>
+                    <label class="label register-form__label">2Д2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind9">
+                    </label>
+                    <label class="label register-form__label">2Д3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind10">
+                    </label>
+                    <label class="label register-form__label">2Д4
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind11">
+                    </label>
+                    <button class="button " type="submit">Бал за 2Д</button>
+                    <input type="text" readonly class="criteria_amount3 input-amount">
+                </div>
             </form>
 
             <form class="form4 form">
-                <h3 class="form__title">Критерій №4</h3>
-            <label class="label register-form__label">
-                Показник 1.
-                <input class="input" name="name" type="number" min="0" max="4" value="" id="ind16">
-            </label>
+                <div class="congnitive_criteria">
 
-            <label class="label register-form__label">
-                Показник 2.
-                <input class="input" type="number" name="name" min="0" max="4" value="" id="ind17"/>
-            </label>
+                    <h3 class="title_criteria">2К</h3>
+                    <label class="label register-form__label"> 2К1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind12">
+                    </label>
+                    <label class="label register-form__label">2К2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind13">
+                    </label>
+                    <label class="label register-form__label">2К3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind14">
+                    </label>
+                    <button class="button another-btn" type="submit">Бал за 2К</button>
+                    <input type="text" readonly class="criteria_amount4 input-amount">
+                </div>
 
-            <label class="label register-form__label">
-                Показник 3.
-                <input name="name" type="number" class="input" min="0" max="4" value="" id="ind18"/>
-            </label>
-            <label class="label register-form__label">
-                Показник 4.
-                <input name="name" type="number" class="input" min="0" max="4" value="" id="ind19"/>
-            </label>
-            <label class="label register-form__label">
-                Показник 5.
-                <input name="name" type="number" class="input" min="0" max="4" value="" id="ind20"/>
-            </label>
-
-            <button class="button" type="submit">Сума за Критерій 4</button>
-            <input type="text" readonly class="criteria_amount4 input-amount">
             </form>
-
 
             <form class="form5 form">
-                <h3 class="form__title">Критерій №5</h3>
-            <label class="label register-form__label">
-                Показник 1.
-                <input class="input" name="name" type="number" min="0" max="4" value="" id="ind21">
-            </label>
-
-            <label class="label register-form__label">
-                Показник 2.
-                <input class="input" type="number" name="name"  value="" id="ind22"/>
-            </label>
-
-            <label class="label register-form__label">
-                Показник 3.
-                <input name="name" type="number" class="input" value="" id="ind23"/>
-            </label>
-            <label class="label register-form__label">
-                Показник 4.
-                <input name="name" type="number" class="input" value="" id="ind24"/>
-            </label>
-            <label class="label register-form__label">
-                Показник 5.
-                <input name="name" type="number" class="input" value="" id="ind25"/>
-            </label>
-
-            <button class="button" type="submit">Сума за Критерій 5</button>
-            <input type="text" readonly class="criteria_amount5 input-amount">
+                <h2 class="form__title">ПК №3</h2>
+                <div class="active_criteria">
+                    <h3 class="title_criteria">3Д</h3>
+                    <label class="label register-form__label"> 3Д1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind15">
+                    </label>
+                    <label class="label register-form__label">3Д2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind16">
+                    </label>
+                    <label class="label register-form__label">3Д3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind17">
+                    </label>
+                    <label class="label register-form__label">3Д4
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind18">
+                    </label>
+                    <button class="button" type="submit">Бал за 3Д</button>
+                    <input type="text" readonly class="criteria_amount5 input-amount">
+                </div>
             </form>
-<div class="box-amount">
-    <button class="button btn_amount" type="submit">Загальна сума балів</button>
-    <input type="text" readonly class="input-amount form-amount">
 
-</div>
-        
+            <form class="form6 form">
+                <div class="congnitive_criteria">
+                    <h3 class="title_criteria">3К</h3>
+                    <label class="label register-form__label"> 3К1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind19">
+                    </label>
+                    <label class="label register-form__label">3К2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind20">
+                    </label>
+                    <label class="label register-form__label">3К3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind21">
+                    </label>
+                    <button class="button another-btn" type="submit">Бал за 3К</button>
+                    <input type="text" readonly class="criteria_amount6 input-amount">
+                </div>
+            </form>
+
+            <form class="form7 form">
+                <h2 class="form__title">ПК №4</h2>
+                <div class="active_criteria">
+                    <h3 class="title_criteria">4Д</h3>
+                    <label class="label register-form__label"> 4Д1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind22">
+                    </label>
+                    <label class="label register-form__label">4Д2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind23">
+                    </label>
+                    <label class="label register-form__label">4Д3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind24">
+                    </label>
+                    <label class="label register-form__label">4Д4
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind25">
+                    </label>
+                    <button class="button" type="submit">Бал за 4Д</button>
+                    <input type="text" readonly class="criteria_amount7 input-amount">
+                </div>
+            </form>
+
+            <form class="form8 form">
+                <div class="congnitive_criteria">
+                    <h3 class="title_criteria">4К</h3>
+                    <label class="label register-form__label"> 4К1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind26">
+                    </label>
+                    <label class="label register-form__label">4К2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind27">
+                    </label>
+                    <label class="label register-form__label">4К3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind28">
+                    </label>
+
+                    <button class="button another-btn" type="submit">Бал за 4К</button>
+                    <input type="text" readonly class="criteria_amount8 input-amount">
+                </div>
+
+            </form>
+
+            <form class="form9 form">
+                <h2 class="form__title">ПК №5</h2>
+                <div class="active_criteria">
+                    <h3 class="title_criteria">5Д</h3>
+                    <label class="label register-form__label"> 5Д1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind29">
+                    </label>
+                    <label class="label register-form__label">5Д2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind30">
+                    </label>
+                    <label class="label register-form__label">5Д3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind31">
+                    </label>
+                    <label class="label register-form__label">5Д4
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind32">
+                    </label>
+                    <button class="button" type="submit">Бал за 5Д</button>
+                    <input type="text" readonly class="criteria_amount9 input-amount">
+                </div>
+            </form>
+
+            <form class="form10 form">
+                <div class="congnitive_criteria">
+                    <h3 class="title_criteria">5К</h3>
+                    <label class="label register-form__label"> 5К1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind33">
+                    </label>
+                    <label class="label register-form__label">5К2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind34">
+                    </label>
+                    <label class="label register-form__label">5К3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind35">
+                    </label>
+                    <button class="button another-btn" type="submit">Бал за 5К</button>
+                    <input type="text" readonly class="criteria_amount10 input-amount">
+                </div>
+            </form>
+
+            <form class="form11 form">
+                <h2 class="form__title">ПК №6</h2>
+                <div class="active_criteria">
+                    <h3 class="title_criteria">6Д</h3>
+                    <label class="label register-form__label"> 6Д1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind36">
+                    </label>
+                    <label class="label register-form__label">6Д2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind37" />
+                    </label>
+                    <label class="label register-form__label">6Д3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind38" />
+                    </label>
+                    <label class="label register-form__label">6Д4
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind39" />
+                    </label>
+                    <button class="button" type="submit">Бал за 6Д</button>
+                    <input type="text" readonly class="criteria_amount11 input-amount">
+                </div>
+            </form>
+
+            <form class="form12 form">
+                <div class="congnitive_criteria">
+                    <h3 class="title_criteria">6К</h3>
+                    <label class="label register-form__label"> 6К1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind40">
+                    </label>
+                    <label class="label register-form__label">6К2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind41">
+                    </label>
+                    <label class="label register-form__label">6К3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind42">
+                    </label>
+                    <label class="label register-form__label">6К4
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind43">
+                    </label>
+                    <button class="button another-btn" type="submit">Бал за 6К</button>
+                    <input type="text" readonly class="criteria_amount12 input-amount">
+                </div>
+            </form>
+
+            <form class="form13 form">
+                <h2 class="form__title">ПК №7</h2>
+                <div class="active_criteria">
+                    <h3 class="title_criteria">7Д</h3>
+                    <label class="label register-form__label"> 7Д1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind44">
+                    </label>
+                    <label class="label register-form__label">7Д2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind45">
+                    </label>
+                    <label class="label register-form__label">7Д3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind46">
+                    </label>
+                    <button class="button" type="submit">Бал за 7Д</button>
+                    <input type="text" readonly class="criteria_amount13 input-amount">
+                </div>
+            </form>
+
+            <form class="form14 form">
+                <div class="congnitive_criteria">
+                    <h3 class="title_criteria">7К</h3>
+                    <label class="label register-form__label"> 7К1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind47">
+                    </label>
+                    <label class="label register-form__label">7К2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind48">
+                    </label>
+                    <label class="label register-form__label">7К3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind49">
+                    </label>
+                    <button class="button another-btn" type="submit">Бал за 7К</button>
+                    <input type="text" readonly class="criteria_amount14 input-amount">
+                </div>
+            </form>
+
+            <form class="form15 form">
+                <h2 class="form__title">ПК №8</h2>
+                <div class="active_criteria">
+                    <h3 class="title_criteria">8Д</h3>
+                    <label class="label register-form__label"> 8Д1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind50">
+                    </label>
+                    <label class="label register-form__label">8Д2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind51">
+                    </label>
+                    <label class="label register-form__label">8Д3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind52">
+                    </label>
+                    <label class="label register-form__label">8Д4
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind53">
+                    </label>
+                    <button class="button" type="submit">Бал за 8Д</button>
+                    <input type="text" readonly class="criteria_amount15 input-amount">
+                </div>
+            </form>
+
+            <form class="form16 form">
+                <div class="congnitive_criteria">
+                    <h3 class="title_criteria">8К</h3>
+                    <label class="label register-form__label"> 8К1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind54">
+                    </label>
+
+                    <label class="label register-form__label">8К2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind55">
+                    </label>
+
+                    <label class="label register-form__label">8К3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind56">
+                    </label>
+                    <button class="button another-btn" type="submit">Бал за 8К</button>
+                    <input type="text" readonly class="criteria_amount16 input-amount">
+                </div>
+            </form>
+
+            <form class="form17 form">
+                <h2 class="form__title">ПК №9</h2>
+                <div class="active_criteria">
+                    <h3 class="title_criteria">9Д</h3>
+                    <label class="label register-form__label"> 9Д1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind57">
+                    </label>
+                    <label class="label register-form__label">9Д2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind58">
+                    </label>
+                    <label class="label register-form__label">9Д3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind59">
+                    </label>
+                    <button class="button" type="submit">Бал за 9Д</button>
+                    <input type="text" readonly class="criteria_amount17 input-amount">
+                </div>
+            </form>
+
+            <form class="form18 form">
+                <div class="congnitive_criteria">
+                    <h3 class="title_criteria">9К</h3>
+                    <label class="label register-form__label"> 9К1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind60">
+                    </label>
+                    <label class="label register-form__label">9К2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind61">
+                    </label>
+
+                    <label class="label register-form__label">9К3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind62">
+                    </label>
+                    <button class="button another-btn" type="submit">Бал за 9К</button>
+                    <input type="text" readonly class="criteria_amount18 input-amount">
+                </div>
+            </form>
+
+            <form class="form19 form">
+                <h2 class="form__title">ПК №10</h2>
+                <div class="active_criteria">
+                    <h3 class="title_criteria">10Д</h3>
+                    <label class="label register-form__label"> 10Д1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind63">
+                    </label>
+                    <label class="label register-form__label">10Д2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind64" />
+                    </label>
+                    <label class="label register-form__label">10Д3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind65" />
+                    </label>
+                    <button class="button" type="submit">Бал за 10Д</button>
+                    <input type="text" readonly class="criteria_amount19 input-amount">
+                </div>
+            </form>
+
+            <form class="form20 form">
+                <div class="congnitive_criteria">
+                    <h3 class="title_criteria">10К</h3>
+                    <label class="label register-form__label"> 10К1
+                        <input class="input" name="name" type="number" min="0" max="4" value="" id="ind66">
+                    </label>
+
+                    <label class="label register-form__label">10К2
+                        <input class="input" type="number" name="name" min="0" max="4" value="" id="ind67" />
+                    </label>
+
+                    <label class="label register-form__label">10К3
+                        <input name="name" type="number" class="input" min="0" max="4" value="" id="ind68" />
+                    </label>
+                    <button class="button another-btn" type="submit">Бал за 10К</button>
+                    <input type="text" readonly class="criteria_amount20 input-amount">
+                </div>
+            </form>
+<div class="base-amount">
+            <div class="box-amount">
+                <button class="button btn_amount1 text-btn" type="submit">Кількість балів за ДІЯЛЬНІСНИМ критерієм</button>
+                <input type="text" readonly class="input-amount1 form-amount1 input-decorate input-decorate1">
+
+            </div>
+            <div class="box-amount">
+                <button class="button btn_amount2 another-btn text-btn" type="submit">Кількість балів за КОГНІТИВНИМ критерієм</button>
+                <input type="text" readonly class="input-amount2 form-amount2 input-decorate">
+
+            </div>
+        </div>
         </div>
 
 
     </main>
     <script type="module" src="./js/script.js"></script>
+
 </body>
 
 </html>

@@ -22,13 +22,47 @@ img {
     margin-top: 25px;
     display: block;
     width: 720px;
+    margin-bottom: 25px;
 }
-.criteria-list{
+
+
+
+.active_criteria{
+    display: flex;
+    background-color: rgb(156, 148, 148);
+    justify-content: space-between;
+    color:  rgb(248, 248, 248);
+    font-size: 24px;
+    align-items: center;
+    margin: 3px;
+    border: 1px solid rgb(77, 75, 75);
+}
+.congnitive_criteria{
+    display: flex;
+    background-color: rgb(233, 142, 5);
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    margin: 3px;
+    border: 1px solid black;
+}
+.title_criteria{
+    display: inline-block;
+    width: 55px;
+    height: 40px;
+
+    border-bottom: 2px solid rgb(0, 0, 0);
+    margin-left: 5px;
+    text-align: center;
+}
+
+
+/* .criteria-list{
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
-}
-input {
+} */
+.input {
     text-align: center;
     width: 40px;
     height: 40px;
@@ -45,6 +79,7 @@ input {
     text-align: center;
     border: 1px solid black;
     padding-bottom: 15px;
+    
 }
 
 .form__title {
@@ -52,8 +87,9 @@ input {
 }
 .input-amount{
     border: 3px solid black ;
-    width: 100px;
-    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+   
 }
 
 .input-amount {
@@ -63,14 +99,43 @@ input {
 
 .box-amount {
     display: block;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    text-align: center; 
+    margin: 0 auto; 
+    margin-top: 15px;
+    /* padding-top: 25px; */
+    /* margin-bottom: 25px;   */
 }
 .button { 
-    
+    margin: 0;
     border: none;
-    background-color: rgb(15, 19, 226);
+    background-color: rgb(61, 59, 59);
     color: white;
+}
+.another-btn{
+    background-color: rgb(255, 166, 0);
+}
+.text-btn{
+ font-size: 28px;
+ /* margin-top: 55px; */
+}
+
+
+.input-decorate{
+    margin-left: 15px;
+    width: 75px;
+    height: 50px;
+    border: 3px solid;
+    font-size: 35px;
+}
+
+.input-decorate1{
+    margin-left: 25px;
+   
+
+}
+.base-amount{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;  
+    align-items: center;   
 }
